@@ -1,0 +1,24 @@
+name: Bug
+description: Reporter un bug
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: Étapes + résultat obtenu + résultat attendu.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / captures
+      description: Ajoute les logs utiles (sans secrets).
+  - type: textarea
+    id: env
+    attributes:
+      label: Environnement
+      description: OS, version, commit, docker, matériel, etc.
+    validations:
+      required: true
